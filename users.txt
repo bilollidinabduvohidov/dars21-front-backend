@@ -1,0 +1,1 @@
+[{"name":"Blol","email":"bilol200414@gmail.com","password":"$2b$08$8eaRHHuCJy7wpfK.FgzAre78OZjaUDwVaLSUSx7aR6qcYUWNbD2SK"},{"name":"kamron","email":"advc@zd12","password":"$2b$08$lg1oCkWZ98VeQ19VnvgncumjllcEsyw5E/XklgPGrBKwc1iIoMXTG"}]

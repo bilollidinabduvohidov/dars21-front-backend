@@ -1,0 +1,424 @@
+.register{
+    height: 80vh;
+}
+
+.register_box{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 20px 10px #00000046;
+    width: 400px;
+    height: 500px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.sign-up-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading-page{
+    text-align: center;
+    font-size: 22px;
+    color: #3F53D8;
+    letter-spacing: 1.9px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.signup-input{
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 15px 0;
+    border: 3px solid #0808295d;
+    outline-color: #3F53D8;
+    border-radius: 3px;
+}
+
+.login{
+    padding-top: 50px;
+    height: 80vh;
+}
+
+.login_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: 2px 2px 20px 10px #00000046;
+    width: 350px;
+    height: 390px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.message_text{
+    /* display: none; */
+    margin-bottom: 10px;
+    color: #ff0000;
+    letter-spacing: 1px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.show{
+    display: block;
+}
+
+::placeholder{
+    letter-spacing: 1.5px;
+    color: black;
+    font-weight: 500;
+}
+
+.btn-signup{
+    margin-top: 20px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    background: #3F53D8;
+    border: 1px solid #0808295d;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.animation_register{
+    position: absolute;
+    top: 30%;
+    background: #c2bdbd28;
+    width: 100px;
+    height: 100px;
+    border-radius: 57% 43% 37% 63% / 45% 52% 48% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -10px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: register;
+}
+
+.animation_register3{
+    position: absolute;
+    top: 50%;
+    right: 70%;
+    background: #c2bdbd28;
+    width: 100px;
+    height: 100px;
+    border-radius: 57% 43% 37% 63% / 45% 52% 48% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -10px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: register3;
+}
+
+.animation_register::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 52% 28% 17% 43% / 30% 43% 47% 60%;
+}
+
+.animation_register3::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 42% 48% 47% 63% / 40% 23% 17% 10%;
+}
+    
+
+.animation_register2{
+    position: absolute;
+    top: 30%;
+    left: 80%;
+    background: #c2bdbd28;
+    width: 100px;
+    height: 100px;
+    border-radius: 40% 40% 14% 63% / 45% 52% 58% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -20px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: register2;
+}
+
+.animation_register2::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 42% 58% 37% 63% / 30% 43% 67% 60%;
+}
+
+.animation_register4{
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    background: #c2bdbd28;
+    width: 100px;
+    height: 100px;
+    border-radius: 40% 40% 14% 63% / 45% 52% 58% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -20px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: register4;
+}
+
+.animation_register4::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 42% 58% 37% 63% / 40% 43% 57% 60%;
+}
+
+.animation-register5{
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    background: #c2bdbd28;
+    width: 100px;
+    height: 100px;
+    border-radius: 30% 70% 30% 63% / 45% 52% 58% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -20px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: name;
+}
+
+.animation-register5::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 42% 58% 37% 63% / 40% 43% 57% 60%;
+}
+
+.animation-register5,
+.animation-register6{
+    z-index: -1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+.animation-register6{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    background: #c2bdbd28;
+    width: 120px;
+    height: 120px;
+    border-radius: 30% 70% 30% 63% / 45% 52% 58% 55%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.05),
+                15px 25px 10px rgba(0,0,0,0.01),
+                15px 20px 20px rgba(0,0,0,0.05),
+                inset -10px -20px 15px rgb(255, 255, 255,0.9)
+    ;
+    animation-name: name2;
+}
+
+.animation-register6::before{
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 42% 58% 37% 63% / 40% 43% 57% 60%;
+}
+
+
+.animation_register,
+.animation_register2,
+.animation_register3,
+.animation_register4{
+    z-index: -1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    animation-play-state: running;
+}
+
+@keyframes name {
+    0%{
+        transform: translate(0px);
+    }
+    
+    25%{
+        transform: translateY(100px);
+    }
+    
+    50%{
+        transform: rotate(260deg);
+        /* transform: scale(10); */
+    }
+    
+    75%{
+        transform: translateY(-220px);
+
+    }
+
+    100%{
+        transform: translateY(110px);
+    }
+}
+
+@keyframes name2 {
+    0%{
+        transform: translate(100px);
+    }
+    
+    25%{
+        transform: translateY(100px);
+    }
+    
+    50%{
+        transform: rotate(140deg);
+        /* transform: scale(10); */
+    }
+    
+    75%{
+        transform: translateY(240px);
+
+    }
+
+    100%{
+        transform: translateY(-110px);
+    }
+}
+
+@keyframes register {
+    0%{
+        transform: translate(120px);
+    }
+    
+    25%{
+        transform: translateY(-100px);
+    }
+    
+    50%{
+        transform: rotate(160deg);
+        /* transform: scale(10); */
+    }
+    
+    75%{
+        transform: translateX(-100px);
+
+    }
+
+    100%{
+        transform: translateY(200px);
+    }
+}
+
+@keyframes register3 {
+    0%{
+        transform: translate(120px);
+    }
+    
+    25%{
+        transform: rotateX(160deg);
+    }
+    
+    50%{
+        /* transform: rotate(160deg); */
+        transform: scale(5);
+    }
+    
+    75%{
+        transform: translateX(100px);
+
+    }
+
+    100%{
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes register2{
+    0%{
+        transform: translate(-150px);
+    }
+    
+    25%{
+        transform: translateY(-150px);
+    }
+    
+    50%{
+        transform: rotate(240deg);
+        /* transform: scale(10); */
+    }
+    
+    75%{
+        transform: translateX(100px);
+
+    }
+
+    100%{
+        transform: translateY(200px);
+    }
+}
+
+@keyframes register4{
+    0%{
+        transform: translateX(150px);
+    }
+    
+    25%{
+        transform: translateY(150px);
+    }
+    
+    50%{
+        transform:rotateZ(180deg);
+        /* transform: scale(10); */
+    }
+    
+    75%{
+        transform: translateX(-100px);
+
+    }
+
+    100%{
+        transform: translateY(200px);
+    }
+}
+

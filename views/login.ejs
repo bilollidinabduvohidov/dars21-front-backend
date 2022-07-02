@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Log In Page</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/signUp.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="container">
+        <a href="/">
+          <img src="./image/IMAGE (5).png" alt="">
+        </a>
+        <ul class="nav_list">
+
+          <li class="nav_item">
+            <a href="/" class="nav_links">Home</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="/post" class="nav_links">Posts</a>
+          </li>
+          
+          <li class="nav_item">
+            <a href="#" class="nav_links">Blog</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="nav_links">About</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="nav_links">Contact</a>
+          </li>
+          
+        </ul>
+
+        <a href="/register" class="nav_link">Register</a>
+        <a href="/login" class="nav_link">Sign up</a>
+
+      </div>
+    </nav>
+
+    <section class="login">
+      <div class="container">
+        <div class="login_box">
+
+          <h3 class="login_text">
+            <%= message %> 
+          </h3>
+          
+          <h1 class="heading-page">Sign Up page</h1>
+
+          <form action="http://localhost:4001/login" method="post" class="sign-up-form">
+
+            <input type="email" class="signup-input" name="email" placeholder="Enter your Email">
+
+            <input type="password" class="signup-input" name="password" placeholder="Enter your Password">
+      
+            <button onclick="showMsg()" class="btn-signup">Log In</button>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let message = document.querySelector(".message")
+      
+      let showMsg = () => {
+
+        setTimeout(()=> {
+          message.classList.add("show")
+        }, 6000)
+
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supper App</title>
+    <meta charset="uft-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <img class="header_image" src="./image/IMAGE (5).png" alt="">
+      <nav>
+        <div class="container">
+          <a href="/">
+            <img src="./image/IMAGE (5).png" alt="">
+          </a>
+          <ul class="nav_list">
+
+            <li class="nav_item">
+              <a href="/" class="nav_links">Home</a>
+            </li>
+
+            <% if (isLogin) { %>
+
+              <li class="nav_item">
+                <a href="/post" class="nav_links">Posts</a>
+              </li>
+  
+            <% } %>
+            
+            <li class="nav_item">
+              <a href="#" class="nav_links">Blog</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#" class="nav_links">About</a>
+            </li>
+
+            <li class="nav_item">
+              <a href="#" class="nav_links">Contact</a>
+            </li>
+            
+          </ul>
+
+          <a href="/register" class="nav_link">Register</a>
+          <a href="/login" class="nav_link">Sign up</a>
+
+          <input type="checkbox" id="menu-bar">
+          <label for="menu-bar">Menu</label> 
+            
+        </div>
+      </nav>
+
+      <main>
+        <div class="container">
+
+        <h1 class="main_text">Hush keldingiz  <%= name %></h1>
+          <div class="main_box">
+            <div class="main_title">
+              <h1>Transform your teamwork with a powerful design</h1>
+              <p>Stop wasting time with clunky, siloed teamwork. Get every stakeholder on the same page with a design tool that help you work better, faster.</p>
+              <button>Start your free trial</button>  
+            </div>
+
+            <div class="main_images">
+              <img src="./image/Frame.png" alt="" class="main_img">
+            </div>
+          </div> 
+        </div>
+      </main>
+
+    </header>
+
+    <footer>
+      <div class="container">
+          <div class="footer_box">
+
+              <div class="footer_smile">
+                  <img src="/image/IMAGE (5).png" alt="">
+              </div>
+
+              <div class="footer_smile">
+                <h4>Quick Links</h4>
+                <h4>Features</h4>
+                <h4>About</h4>
+                <h4>Pricing</h4>
+                <h4>Blog</h4>
+                <h4>Contact</h4>
+              </div>
+
+              <div class="footer_smile">
+                <h4>Template</h4>
+                <h4>Style Guide</h4>
+                <h4>Licences</h4>
+                <h4>Changelog</h4>
+                <h4>Instructions</h4>
+                <h4>ContSign Inact</h4>
+              </div>
+
+              <div class="footer_smile">
+                <h4>Get In Touch</h4>
+                <h4><i class="fa-solid fa-envelope"></i> Support@collab.com</h4>
+                <h4><i class="fa-solid fa-phone"></i> +1-202-555-0144</h4>
+                <h4><i class="fa-solid fa-globe"></i> Collab.webflow.io</h4>
+
+                <div class="smile_box">
+                  <h4><i class="fa-brands fa-facebook-f"></i></h4>
+                  <h4><i class="fa-brands fa-twitter"></i></h4>
+                  <h4><i class="fa-brands fa-instagram"></i></h4>
+                  <h4><i class="fa-solid fa-globe"></i></h4>
+                </div>
+
+              </div>
+
+          </div>
+      </div>
+    </footer>
+
+
+    <script>
+      let navList = document.querySelector(".nav_list")
+      navList.classList.add("nav_list_mobile")
+      
+    </script>
+  </body>
+</html>

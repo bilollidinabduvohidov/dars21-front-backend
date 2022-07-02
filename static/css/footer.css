@@ -1,0 +1,32 @@
+footer{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #6c7de9;
+}
+.footer_box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_smile img{
+    width: 150px;
+}
+
+.footer_smile h4{
+    cursor: pointer;
+    font-size: 17px;
+    color: #0b144d;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.smile_box{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.smile_box i {
+    color: #010414;
+    font-size: 20px;
+}

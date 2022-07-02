@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Edit User</title>
+  </head>
+  <body>
+    <h1>Ma'lumotlarni taxrirlash</h1>
+
+    <form method="post" action="http://localhost:4001/update/<%= user.id  %>" enctype="multipart/form-data">
+      <input type="text" name="name" value="<%= user.name %>">
+      <br>
+      <br>
+      <img src="<%= user.image %>" alt="old_photo" width="80">
+      <input type="file" name="photo" accept="image/*">
+      <br>
+      <br>
+      <button id="<%= user.id %>" type="submit">Save</button>
+    </form>
+    
+    
+  </body>
+</html>

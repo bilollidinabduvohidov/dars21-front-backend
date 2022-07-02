@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supper App</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="/">
+          <img src="./image/IMAGE (5).png" alt=""> 
+        </a>
+        <ul class="nav_list">
+
+          <li class="nav_item">
+            <a href="/" class="nav_links">Home</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="/post" class="nav_links">Posts</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="nav_links">Blog</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="nav_links">About</a>
+          </li>
+
+          <li class="nav_item">
+            <a href="#" class="nav_links">Contact</a>
+          </li>
+          
+        </ul>
+
+        <a href="#" class="nav_link">Sign up for Beta</a>
+      </div>
+    </nav>
+
+
+  <div class="container">
+    <h1 class="user_text">List of Users</h1>
+
+      <form class="users_form" method="post" action="http://localhost:4001/post" enctype="multipart/form-data">
+        <input class="users_input" placeholder="Abduvokhidov" type="search" name="name" required>
+        <input class="users_input_file" type="file" name="photo" accept="image/*" required>
+        <button class="users_submit" type="submit">Save</button>
+      </form> 
+    
+      <ul class="users-list">
+        <% for(let post of posts) { %>
+          <li class="users-item">
+            <div class="users-item-content">
+              <h2 class="users-name"><%= post.name %></h2>
+              <img class="user_image" src="<%= post.image %>" alt="user_photo">
+              <a class="del-btn" href="http://localhost:4001/post/<%= post.id  %>">Delete post</a>
+              <a class="edit-btn edit-link" href="http://localhost:4001/edit/<%= post.id  %>">Edit post</a> 
+
+            </div>
+          </li>
+        <% } %>
+      </ul>
+
+    </div>
+  </body>
+</html>
